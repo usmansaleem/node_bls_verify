@@ -15,7 +15,7 @@ See https://github.com/Consensys/web3signer/pull/982 for more information.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/bls-signature-verification.git
+git clone https://github.com/usmansaleem/node_bls_verify.git
 ```
 2. Navigate to the project directory: 
 ```bash
