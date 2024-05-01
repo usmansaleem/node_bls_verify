@@ -1,0 +1,24 @@
+{
+  "name": "node_bls_verify",
+  "version": "1.0.0",
+  "description": "BLS verify signature from Web3Signer Proof of Validation API",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "keywords": [],
+  "author": "usmansaleem",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usmansaleem/node_bls_verify.git"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
