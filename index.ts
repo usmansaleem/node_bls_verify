@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { Buffer } from 'buffer';
+import { verify } from 'noble-bls12-381';
 
 const pubkeyHex = '0xa3cc6919919abf050a3e64b6c5d826148ee3f766e6b67e7e8000645e51ebed1b9c6a20b9b7413a4eb835529cbe4f77a9';
 const requestPayload = {
@@ -22,6 +23,12 @@ const sendRequest = async () => {
     } else {
       console.log('Payload does not match the request body');
     }
+
+    // Verify signature
+    const hexSignature = response.data.signature.slice(2); // Remove the '0x' prefix
+    const signature = Buffer.from(hexSignature, 'hex');
+
+    
   } catch (error) {
     console.error('Error:', error);
   }
