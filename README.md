@@ -1,6 +1,6 @@
 # BLS Signature Verification
 
-This project is a TypeScript implementation for verifying BLS signatures using the `@noble/curves/bls12-381` library. 
+This project is a TypeScript implementation for verifying BLS signatures using the [@chainsafe/bls](https://www.npmjs.com/package/@chainsafe/bls) library. 
 It sends a POST request to the Web3Signer `http://localhost:9005/api/v1/eth2/ext/sign/${pubkeyHex}` endpoint with a specific payload 
 and verifies the signature received in the response.
 
@@ -51,12 +51,6 @@ You can modify the following variables in the `index.ts` file to change the requ
 
 `pubkeyHex`: The public key in hexadecimal format.
 `requestPayload`: The payload object to be sent in the POST request.
-
-## Dependencies
-
-- `@noble/curves/bls12-381`: A library for BLS12-381 signatures and pairing-friendly curves.
-- `axios`: A popular HTTP client for making requests.
-- `buffer`: A Node.js built-in module for handling binary data.
 
 ## License
 

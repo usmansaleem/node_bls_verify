@@ -4,7 +4,7 @@
   "description": "BLS verify signature from Web3Signer Proof of Validation API",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node index.ts"
+    "start": "node --loader=ts-node/esm index.ts"
   },
   "keywords": [],
   "author": "usmansaleem",
@@ -13,6 +13,7 @@
     "type": "git",
     "url": "https://github.com/usmansaleem/node_bls_verify.git"
   },
+  "type": "module",
   "devDependencies": {
     "@types/node": "^20.12.7",
     "ts-node": "^10.9.2",
