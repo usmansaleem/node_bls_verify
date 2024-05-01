@@ -13,10 +13,9 @@ const sendRequest = async () => {
   try {
     console.log("\n\nSending request...")
     const response = await axios.post(`http://localhost:9005/api/v1/eth2/ext/sign/${pubkeyHex}`, requestPayload);
-    const hexSignature = response.data.signature.slice(2); // Remove the '0x' prefix
-    const signature = Buffer.from(hexSignature, 'hex');
-
+    const hexSignature = response.data.signature;
     const base64Payload = response.data.payload;
+    
     const decodedPayloadBuffer = Buffer.from(base64Payload, 'base64');
 
     // verify the payload
