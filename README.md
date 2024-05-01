@@ -19,7 +19,7 @@ git clone https://github.com/usmansaleem/node_bls_verify.git
 ```
 2. Navigate to the project directory: 
 ```bash
-cd bls-signature-verification
+cd node_bls_verify
 ```
 3. Install the dependencies:
 ```bash
