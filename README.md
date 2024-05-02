@@ -41,7 +41,7 @@ and the public key `0xa3cc6919919abf050a3e64b6c5d826148ee3f766e6b67e7e8000645e51
 
 The application will then:
 
-Verify the BLS signature received in the response using the `@noble/curves/bls12-381` library.
+Verify the BLS signature received in the response using the ` @chainsafe/bls` library.
 Check if the decoded payload from the response matches the original request payload.
 The results will be logged to the console.
 
